@@ -4,8 +4,8 @@
 class StaticWebServer < Formula
   desc 'A blazing fast and asynchronous web server for static files-serving'
   homepage 'https://sws.joseluisq.net/'
-  url 'https://github.com/joseluisq/static-web-server/archive/v2.9.0.tar.gz'
-  sha256 'ea88eab9bcb72adfafeaf8fe6158250844f5e732a8f02b93a3cc601b90584888'
+  url 'https://github.com/joseluisq/static-web-server/archive/v2.10.0.tar.gz'
+  sha256 '67a3c46007101c6de2bb81d1113261ead52a91ad805e0f52a9cfb798e1e87936'
   license any_of: ['MIT', 'Apache-2.0']
   head 'https://github.com/joseluisq/static-web-server.git', branch: 'master'
 
