@@ -12,7 +12,7 @@ class StaticWebServerBin < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 'da863edda7b3bc87ca01f24bda3ba16bec52422c7c8bdf71517fe53398e53e46'
+      sha256 'f595adbf7fc814300dd81628e00b8b062671a1b8df817d1b35f985ef10c517a3'
 
       def install
         bin.install 'static-web-server'
@@ -25,7 +25,7 @@ class StaticWebServerBin < Formula
 
     if Hardware::CPU.arm?
       url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 'b508dec41540222b6712eeec20c458d2e295562db5bed151bf30cc7d6201fbc1'
+      sha256 'bea777b3654c218bf385ce1c225d405df3e4749a3e6b98f7ace560afd19e05a6'
 
       def install
         bin.install 'static-web-server'
@@ -40,7 +40,7 @@ class StaticWebServerBin < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 '20205a7d40d2fad9c9665517937af0ae942e864a0a0f7d925aab89478e0179d4'
+      sha256 '141869e36d034e1444e6d58b1f1e550662027d3c520bb4c6fdbf603a22421492'
 
       def install
         bin.install 'static-web-server'
@@ -53,7 +53,7 @@ class StaticWebServerBin < Formula
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3972c627550bb94ee421f88565ad34955a40cd6bab4106bfeeae1ffddbf16a2d"
+      sha256 "10b932ead496965599542decd00a5ca17540b4b5b19403f8df5ed43339294b52"
 
       def install
         bin.install 'static-web-server'
