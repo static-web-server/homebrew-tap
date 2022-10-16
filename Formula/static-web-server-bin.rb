@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class StaticWebServerBin < Formula
-  version '2.13.0'
+  version '2.13.1'
   desc 'A blazing fast and asynchronous web server for static files-serving'
   homepage 'https://sws.joseluisq.net/'
   license any_of: ['MIT', 'Apache-2.0']
@@ -12,7 +12,7 @@ class StaticWebServerBin < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 'd51b407e79194a1df2cb6469832b82e01da397de8fb5b2a67ed34f64a77446c8'
+      sha256 '3709aa9a09f3404452281166b2b6618fe2f37b02ed5e31a38a3ed59cd0a6467c'
 
       def install
         bin.install 'static-web-server'
@@ -25,7 +25,7 @@ class StaticWebServerBin < Formula
 
     if Hardware::CPU.arm?
       url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 'da9ad6ce6dcd1ab5226f27a31e7aab056d0850f9b572d4bd458eee2875430544'
+      sha256 '015579af6123cf9e41b1c90cd9d20bc3f57a4b739b2cd94ebe04be89589380cd'
 
       def install
         bin.install 'static-web-server'
@@ -40,7 +40,7 @@ class StaticWebServerBin < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 '11d2c69210da0bf57985bb602b102d14b0614c2a680336bda976486928c85a33'
+      sha256 'a337d708010866e605ea8dfc3fd8b54804c7f0ae99ab4072639962928a63ac29'
 
       def install
         bin.install 'static-web-server'
@@ -53,7 +53,7 @@ class StaticWebServerBin < Formula
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "90c02551a9ad8c0a79bb773ba28057ee37181cb37cecafc67e40b7b60fb953b3"
+      sha256 "1a66a44233c5a8ee3c8960d56bd7297bc3c9ef9cdfef00d1cc9282d712957043"
 
       def install
         bin.install 'static-web-server'
