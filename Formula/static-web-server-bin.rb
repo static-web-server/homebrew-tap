@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 class StaticWebServerBin < Formula
-  version '2.13.1'
-  desc 'A blazing fast and asynchronous web server for static files-serving'
+  version '2.14.0'
+  desc 'A cross-platform, blazing fast and asynchronous web server for static files-serving.'
   homepage 'https://sws.joseluisq.net/'
   license any_of: ['MIT', 'Apache-2.0']
 
@@ -11,8 +11,8 @@ class StaticWebServerBin < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 '3709aa9a09f3404452281166b2b6618fe2f37b02ed5e31a38a3ed59cd0a6467c'
+      url "https://github.com/static-web-server/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 '42537ab0269349891a2f5b4e00c84ae489596a2cdb09122de10c49c87a4bb39a'
 
       def install
         bin.install 'static-web-server'
@@ -24,8 +24,8 @@ class StaticWebServerBin < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 '015579af6123cf9e41b1c90cd9d20bc3f57a4b739b2cd94ebe04be89589380cd'
+      url "https://github.com/static-web-server/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 '454b6914ccbdecf7c97a40dd39de9c972acae23d3ec6a16d7d997dc26469ad58'
 
       def install
         bin.install 'static-web-server'
@@ -39,8 +39,8 @@ class StaticWebServerBin < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 'a337d708010866e605ea8dfc3fd8b54804c7f0ae99ab4072639962928a63ac29'
+      url "https://github.com/static-web-server/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 '3740c9e874c511c8cd7e2b02c03a4172750f094947c7ce7dcb809b8f895f40b9'
 
       def install
         bin.install 'static-web-server'
@@ -52,8 +52,8 @@ class StaticWebServerBin < Formula
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joseluisq/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1a66a44233c5a8ee3c8960d56bd7297bc3c9ef9cdfef00d1cc9282d712957043"
+      url "https://github.com/static-web-server/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "60bb0ec7acbfcbeac01713a80ffa4f0480cf8a8cc07ee8ea77cf9c73802827a3"
 
       def install
         bin.install 'static-web-server'
