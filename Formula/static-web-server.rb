@@ -4,8 +4,8 @@
 class StaticWebServer < Formula
   desc 'A cross-platform, high-performance and asynchronous web server for static files-serving.'
   homepage 'https://static-web-server.net/'
-  url 'https://github.com/static-web-server/static-web-server/archive/v2.38.0.tar.gz'
-  sha256 '8f806542cd67f192610b2187cf6eb2fd0f0736309bf639af9fb6cb6a13d03d85'
+  url 'https://github.com/static-web-server/static-web-server/archive/v2.38.1.tar.gz'
+  sha256 'fce33a832f2ad3f9a96ced59e44a8aeb6c01a804e9cfe8fb9879979c27bbd5f1'
   license any_of: ['MIT', 'Apache-2.0']
   head 'https://github.com/static-web-server/static-web-server.git', branch: 'master'
 
