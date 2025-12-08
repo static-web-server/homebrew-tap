@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class StaticWebServerBin < Formula
-  version '2.40.0'
+  version '2.40.1'
   desc 'A cross-platform, high-performance and asynchronous web server for static files-serving.'
   homepage 'https://static-web-server.net/'
   license any_of: ['MIT', 'Apache-2.0']
@@ -12,7 +12,7 @@ class StaticWebServerBin < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/static-web-server/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 '10ba00ac903419eb566f32394659f82dc3f05e3a8275eb256ca324ebcb7ffe67'
+      sha256 'fbdb678ab2e7886ef20719bde2a929c49ec1b24dc4900f409bd377e49a85dd32'
 
       def install
         bin.install 'static-web-server'
@@ -25,7 +25,7 @@ class StaticWebServerBin < Formula
 
     if Hardware::CPU.arm?
       url "https://github.com/static-web-server/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 '739941c316c699c836f120d5654b41a2afdabb936d4e54ade985c13146c3aee9'
+      sha256 '58370cc01799c826fc5d3398762c2e6acb5440ab0ec9a289ab9b709e76cff242'
 
       def install
         bin.install 'static-web-server'
@@ -40,7 +40,7 @@ class StaticWebServerBin < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/static-web-server/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 'bb7adb712c2980b541e95db93ab5834f7b839c05773175dea372c9dbbb27e37d'
+      sha256 '0330cd4a6265a96fac4be6620abfd2a892e9ff32f3b8e2de0630b09cb3236f67'
 
       def install
         bin.install 'static-web-server'
@@ -53,7 +53,7 @@ class StaticWebServerBin < Formula
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/static-web-server/static-web-server/releases/download/v#{version}/static-web-server-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4b680d9a491b85d02d0866f3cce0cc722fc79c6630983c7ce0303ce4c35d1849"
+      sha256 "f3db363fdb41898a40d9aaba0714e06d0a03513d2cacacf7ee6066222b422f7f"
 
       def install
         bin.install 'static-web-server'
